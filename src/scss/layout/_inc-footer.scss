@@ -1,0 +1,106 @@
+.footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #3D4050;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width:1024px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &-privacy {
+        font-size: 13px;
+        color: #fff;
+
+        @media(max-width:1024px){
+            margin-bottom: 16px;
+        }
+    }
+
+    &-payments{
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width:1024px){
+           margin-bottom: 8px;
+           flex-wrap: wrap;
+           justify-content: unset;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            margin-right: 38px;
+            font-size: 13px;
+            color: #C3C3C3;
+            white-space: nowrap;
+            line-height: 0;
+
+            @media(max-width:1024px){
+                margin-bottom: 8px;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        &__icon{
+           fill: #3e9cdc;
+           color: #3e9cdc;
+           margin-right: 10px;
+           width: 20px;
+        }
+    }
+
+    &-contacts{
+        display: flex;
+        align-items: center;
+
+        @media(max-width:1024px){
+            flex-wrap: wrap; 
+         }
+
+        &__item{
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #fff;
+            transition: .3s;
+
+            @media(max-width:1024px){
+                margin-bottom: 8px;
+            }
+
+            &:hover {
+                color: #43ABF0;
+            }
+
+            &:first-child{
+                margin-right: 38px;
+            }
+        }
+
+        &__icon{
+            fill: #3e9cdc;
+            color: #3e9cdc;
+            width: 15px;
+            height: 12px;
+            margin-right: 10px;
+        }
+    }
+
+    &__space {
+        color: #C3C3C3;
+
+        @media(max-width:1024px){
+            display: none;
+        }
+    }
+}

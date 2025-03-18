@@ -1,0 +1,39 @@
+ul,
+ol,
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
+input {
+  margin: 0;
+  outline: 0;
+}
+
+.title-accent{
+  color: #3e9cdc;
+}
+.icon{
+  width: 40px;
+  height: 30px;
+}
