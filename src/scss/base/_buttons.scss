@@ -1,28 +1,40 @@
 .ui-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 43px;
-    max-width: 183px;
-    flex: 0 0 183px;
-    text-transform: uppercase;
-    font-size: 13px;
-    border-radius: 4px;
-    transition: .3s;
-    
-    &:hover {
-        transform: scale(1.02);
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 90px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #262F56;
+  border-radius: 6px;
+  transition: 0.3s;
 
-    &--accent {
-        background-color: #3E9CDC;
-        color: #fff;
-        border: 1px solid #fff;
-    }
+  @media(max-width:768px){
+     height: 32px;
+     font-size: 10px;
+  }
 
-    &--basic{
-        background-color: #fff;
-        color: #2A2B30;
-        border: 1px solid #2A2B30;
+  &:hover{
+      transform: scale(1.04);
+      opacity: 0.3;
+  }
+
+  &--internal{
+    background-color: #F6F6F6;
+
+    @media(max-width:768px){
+      width: 59px;
     }
+  }
+
+  &--external{
+    background-color: #00C659;
+    color: #fff;
+    width: 82px;
+
+    @media(max-width:768px){
+      width: 53px;
+    }
+  }
 }

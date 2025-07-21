@@ -1,279 +1,47 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="SoftCorp" />
-  <meta name="description" content="SoftCorp" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
-
-  <title>SoftCorp</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-<header class="header" id="header">
-      <div class="container"> 
-        <div class="header__container">
-            <a href="http://softcorp/dist/" class="header__logo">
-              <img class="header__logo-img" src="./images/logo.png" alt="logo">
-            </a>
-
-            <div class="header-menu">
-              <ul class="header-menu__list">
-                <li class="header-menu__element">
-                  <a href="#" class="header-menu__link">Бизнес</a>
-                </li>
-
-                <li class="header-menu__element">
-                  <a href="#" class="header-menu__link">О нас</a>
-                </li>
-
-                <li class="header-menu__element">
-                  <a href="#" class="header-menu__link">Цены</a>
-                </li>
-
-                <li class="header-menu__element">
-                  <a href="#" class="header-menu__link">Оформить заказ</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="header-burger" id="burger">
-              <div class="header-burger__line"></div>
-            </div>
+<!--#include file="inc-header.html"-->
+<main class="middle" id="middle">
+  <div class="container">
+          
+  <div class="bk-rating">
+    <div class="bk-rating__body">
+      <div class="bk-rating__head">
+        <div class="bk-rating__title">Топ букмекерских контор</div>
+        <div class="bk-rating__title bk-rating__title--mobile">Рейтинг букмекерских контор</div>
+        <div class="bk-rating__dropdown">
+          <img src="./images/svg/type.svg" alt="type">
         </div>
       </div>
-</header>
-<main class="middle" id="middle">
-    <div class="main-screen">
-        <div class="container">
-            <div class="main-screen__body">
-                <h1 class="main-screen__title">
-                    <span class="title-accent">Lorem</span> 
-                        ipsum dolor sit amet consectetur 
-                    <span class="title-accent">adipiscing</span>
-                </h1>
 
-                <div class="main-screen__wrap">
-                    <p class="main-screen__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+      <ul class="bk-rating__tabs">
+        <li class="bk-rating__tab bk-rating__tab--active" onclick="selectTab('byuser', this)">Народный рейтинг</li>
+        <li class="bk-rating__tab" onclick="selectTab('byeditors', this)">Рейтинг редакции</li>
+        <li class="bk-rating__tab" onclick="selectTab('bybonus', this)">Рейтинг по бонусу</li>
+        <li class="bk-rating__tab" onclick="selectTab('bysubrating', this, 'reliability')">Рейтинг по надежности</li>
+      </ul>
+    
+      <div class="bk-rating__container">
+          <div class="bk-rating__loader" id = "loader">
+          </div>
+          <div class="bk-rating__list" id = 'list'>
+          </div>
+      </div>
 
-                    <ul class="main-screen__list">
-                        <li class="main-screen__element">Totam rem aperiam eaque ipsa</li>
-                        <li class="main-screen__element">Sit voluptatem accusantium doloremque laudantium</li>
-                        <li class="main-screen__element">Sed ut perspiciatis, unde omnis iste natus error</li>
-                    </ul>
-                </div>
-
-                <div class="main-screen__buttons">
-                    <a href="#" class="ui-btn ui-btn--accent">
-                        заказать
-                    </a>
-
-                    <a href="#" class="ui-btn ui-btn--basic">
-                        подробнее
-                    </a>
-                </div>
-            </div>
-        </div>
+      <div class="bk-rating-bottom">
+        <a href="#" class="bk-rating-bottom__next">
+          Смотреть дальше
+          <img class="bk-rating-bottom__icon" src="./images/svg/arrow.svg" alt="arrow">
+        </a>
+        <a href="#" class="bk-rating-bottom__link">
+          Как формируется рейтинг?
+        </a>
+      </div>
     </div>
 
-    <div class="main-form">
-        <div class="container">
-            <div class="main-form__head">
-                <h2 class="main-form__title">
-                    Оформление  
-                    <span class="title-accent">Заказа</span>
-                </h2>
-        
-                <p class="main-form__subtitle">
-                    Перед заполнением формы ознакомьтесь с нашей схемой работы!
-                </p>
-            </div>
-    
-            <div class="main-form__features main-form-features">
-                <div class="main-form-features__item ">
-                    <div class="main-form-features__circle">
-                        <svg class="icon main-form-features__icon">
-                            <use xlink:href="images/svg/symbols.svg#magnifier"></use>
-                        </svg>
-                    </div>
-                    <p class="main-form-features__txt">
-                        Lorem ipsum dolor sit amet
-                    </p>
-                </div>
-            
-                <div class="main-form-features__item">
-                    <div class="main-form-features__circle">
-                        <svg class="icon main-form-features__icon">
-                            <use xlink:href="images/svg/symbols.svg#percent"></use>
-                        </svg>
-                    </div>
-                    <p class="main-form-features__txt">
-                        Сonsecteturadipiscing elit
-                    </p>
-                </div>
-            
-                <div class="main-form-features__item">
-                    <div class="main-form-features__circle">
-                        <svg class="icon main-form-features__icon main-form-features__icon--big">
-                            <use xlink:href="images/svg/symbols.svg#list"></use>
-                        </svg>
-                    </div>
-                    <p class="main-form-features__txt">
-                        Sed do eiusmod tempor
-                    </p>
-                </div>
-            
-                <div class="main-form-features__item">
-                    <div class="main-form-features__circle">
-                        <svg class="icon main-form-features__icon">
-                            <use xlink:href="images/svg/symbols.svg#mail"></use>
-                        </svg>
-                    </div>
-                    <p class="main-form-features__txt">
-                        Esse cillum dolore eu fugiat
-                    </p>
-                </div>
-            
-                <div class="main-form-features__item">
-                    <div class="main-form-features__circle">
-                        <svg class="icon main-form-features__icon">
-                            <use xlink:href="images/svg/symbols.svg#dollar"></use>
-                        </svg>
-                    </div>
-                    <p class="main-form-features__txt">
-                        Excepteur sint occaecat cupidatat non proident
-                    </p>
-                </div>
-            </div>
-
-            <form action="" class="main-form-order">
-                <div class="main-form-order__wrap">
-                    <div class="main-form-order-select main-form-order__bar">
-                        <input type="hidden" class="main-form-order-select__input" name="type">
-                        <span class="main-form-order-select__txt">
-                            Выберите тип системы
-                        </span>
-                        <ul class="main-form-order-select__dropdown">
-                            <li class="main-form-order__element">Sed ut perspiciatis</li>
-                            <li class="main-form-order__element">Nemo enim ipsam</li>
-                            <li class="main-form-order__element">Et harum quidem</li>
-                            <li class="main-form-order__element">Temporibus autem</li>
-                            <li class="main-form-order__element">Itaque earum rerum</li>
-                            <li class="main-form-order__element">Sed ut perspiciatis</li>
-                            <li class="main-form-order__element">Sed ut perspiciatis</li>
-                            <li class="main-form-order__element">Nemo enim ipsam</li>
-                            <li class="main-form-order__element">Et harum quidem</li>
-                            <li class="main-form-order__element">Temporibus autem</li>
-                            <li class="main-form-order__element">Itaque earum rerum</li>
-                            <li class="main-form-order__element">Sed ut perspiciatis</li>
-                        </ul>
-                    </div>
-
-                    <input type="mail" name="mail" placeholder="Ваш e-mail" class="main-form-order__bar main-form-order__mail">
-
-                    <input type="name" name="name" placeholder="Ваше имя" class="main-form-order__bar main-form-order__name">
-
-
-                    <div class="main-form-order__wrapper">
-                        <label class="main-form-order-range__label" for="range">
-                            <p class="main-form-order-range__description">
-                              Sed ut perspiciatis, unde omnis iste natus
-                            </p>
-                            
-                            <span class="main-form-order-range__value"></span>
-                           
-                        </label>
-    
-                        <input type="range" min="1" max="100" value="75" name="range" id="range" class="main-form-order-range__input">
-                    </div>
-
-                    <div class="main-form-order-file">
-                        <label class="main-form-order-file__label main-form-order__bar" for="file">
-                            <svg class="icon main-form-order-file__icon">
-                                <use xlink:href="images/svg/symbols.svg#file"></use>
-                            </svg>
-                          прикрепить файл
-                        </label>
-                        <input type="file" name="file" id="file" class="main-form-order-file__input">
-                    </div>
-
-                </div>   
-
-                <button type="submit" class="main-form-order__submit main-form-order__bar">
-                    отправить
-                </button>
-            </form>
-        </div>
-    </div>
+    <a href="#" class="bk-rating__mobile">
+          СМОТРЕТЬ ПОЛНЫЙ РЕЙТИНГ
+    </a>
+  </div>
+  </div>
 </main>
-<footer class="footer" id="footer">
-    <div class="container">
-        <div class="footer__body">
-            <div class="footer-privacy">   
-                <p class="footer-privacy__txt">
-                    © 2018 «LoremIpsum.net» Все права защищены.
-                </p>
-            </div>
 
-            <div class="footer__space">|</div>
-            
-            <div class="footer-payments footer__payments">
-
-                <div class="footer-payments__item">
-                    <svg class="icon footer-payments__icon">
-                        <use xlink:href="images/svg/symbols.svg#qiwi"></use>
-                    </svg>
-                    <p class="footer-payments__txt">Qiwi wallet</p>
-                </div>
-
-                <div class="footer-payments__item">
-                    <svg class="icon footer-payments__icon">
-                        <use xlink:href="images/svg/symbols.svg#yandex"></use>
-                    </svg>
-                    <p class="footer-payments__txt">Yandex Money</p>
-                </div>
-
-                <div class="footer-payments__item">
-                    <svg class="icon footer-payments__icon">
-                        <use xlink:href="images/svg/symbols.svg#web-money"></use>
-                    </svg>
-                    <p class="footer-payments__txt">Web Money</p>
-                </div>
-            </div>
-            <div class="footer__space">|</div>
-            
-            <div class="footer-contacts">
-                <a href="mailto:info@ipsum228.com" class="footer-contacts__item">
-                    <svg class="icon footer-contacts__icon">
-                        <use xlink:href="images/svg/symbols.svg#footer-mail"></use>
-                    </svg>
-                    <p class="footer-contacts__txt">
-                        info@ipsum228.com
-                    </p>
-                </a>
-
-                <a href="https://vk.com/" class="footer-contacts__item">
-                    <svg class="icon footer-contacts__icon">
-                        <use xlink:href="images/svg/symbols.svg#vk"></use>
-                    </svg>
-                    <p class="footer-contacts__txt">
-                        Мы вконтакте
-                    </p>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="./js/main.js"></script>
-</body>
-
-</html>
-
+<!--#include file="inc-footer.html"-->

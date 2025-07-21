@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "logo": "../src/images/1x.png",
+    "rating": 4.7,
+    "review_count": 123,
+    "bonus_amount": 100,
+    "badge": "exclusive",
+    "internal_link": "/bk/1",
+    "external_link": "https://partner1.com"
+  },
+  {
+    "id": 2,
+    "logo": "../src/images/onbet.png",
+    "rating": 4.2,
+    "review_count": 87,
+    "bonus_amount": 135,
+    "badge": "no-deposit",
+    "internal_link": "/bk/2",
+    "external_link": "https://partner2.com"
+  },
+  {
+    "id": 3,
+    "logo": "../src/images/leon.png",
+    "rating": 3.9,
+    "review_count": 45,
+    "bonus_amount": 0,
+    "badge": "no-deposit",
+    "internal_link": "/bk/3",
+    "external_link": "https://partner3.com"
+  },
+  {
+    "id": 4,
+    "logo": "../src/images/win.png",
+    "rating": 2.1,
+    "review_count": 405,
+    "bonus_amount": 777,
+    "badge": "no-bonus",
+    "internal_link": "/bk/3",
+    "external_link": "https://partner3.com"
+  },
+  {
+    "id": 5,
+    "logo": "../src/images/mel.png",
+    "rating": 2.7,
+    "review_count": 405,
+    "bonus_amount": 777,
+    "badge": "no-bonus",
+    "internal_link": "/bk/3",
+    "external_link": "https://partner3.com"
+  },
+  {
+    "id": 6,
+    "logo": "../src/images/1x.png",
+    "rating": 2.5,
+    "review_count": 5,
+    "bonus_amount": 77,
+    "badge": "no-deposit",
+    "internal_link": "/bk/3",
+    "external_link": "https://partner3.com"
+  },
+  {
+    "id": 7,
+    "logo": "../src/images/onbet.png",
+    "rating": 3.4,
+    "review_count": 415,
+    "bonus_amount": 77,
+    "badge": "exclusive",
+    "internal_link": "/bk/3",
+    "external_link": "https://partner3.com"
+  }
+]  
